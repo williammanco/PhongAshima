@@ -11,7 +11,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 let config = {
   entry:  __dirname + "/src/client/index.js",
   output: {
-    filename: 'public/js/bundle.js',
+    filename: 'js/bundle.js',
     path: __dirname + "/public"
   },
   module: {
