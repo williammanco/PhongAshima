@@ -11,7 +11,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 let config = {
   entry:  __dirname + "/src/client/index.js",
   output: {
-    filename: 'js/bundle.js',
+    filename: 'public/js/bundle.js',
     path: __dirname + "/public"
   },
   module: {
@@ -72,7 +72,7 @@ if (process.env.NODE_ENV === 'production') {
       'process.env': {NODE_ENV: JSON.stringify('production')}
     }),
     new HtmlWebpackPlugin({
-      template: __dirname + '/src/client/index.html'
+      template: __dirname + '/index.html'
     }),
     new webpack.optimize.UglifyJsPlugin()
   ]
