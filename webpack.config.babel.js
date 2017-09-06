@@ -72,7 +72,7 @@ if (process.env.NODE_ENV === 'production') {
       'process.env': {NODE_ENV: JSON.stringify('production')}
     }),
     new HtmlWebpackPlugin({
-      template: __dirname + '/index.html'
+      template: __dirname + '/src/client/index.html'
     }),
     new webpack.optimize.UglifyJsPlugin()
   ]
